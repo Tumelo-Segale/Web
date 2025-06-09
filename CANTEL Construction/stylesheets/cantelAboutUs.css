@@ -1,0 +1,199 @@
+/*style sheet for about us*/
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 12px;
+}
+
+.mission,
+.vision {
+  width: 95%;
+
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mission {
+  background-color: #ebec8a;
+}
+
+.vision {
+  background-color: #fff8c6;
+}
+
+.mission p,
+.vision p {
+  font-size: 24px;
+  line-height: 1.6;
+  color: black;
+  margin-top: 12px;
+}
+
+.teamArea {
+  padding: 24px;
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/*scaled student card*/
+.studentCards {
+  width: 320px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+  background: linear-gradient(45deg, orange, blue);
+}
+
+.cardHeader {
+  width: 100%;
+  height: 35%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.cardLogo {
+  width: 67%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLogo img {
+  width: 22%;
+}
+
+.cardLogoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  row-gap: 0;
+}
+
+.cardLogoText p {
+  font-size: 8px;
+  line-height: 0;
+  margin-top: 4px;
+  color: white;
+}
+
+.cardSlogan {
+  padding-top: 8px;
+  width: 33%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cardBody {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.leftCardBody {
+  width: 67%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 8px;
+}
+
+.email {
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 8px;
+}
+
+.department {
+  font-size: 10px;
+  color: white;
+  height: 10px;
+}
+
+.name,
+.department,
+.email {
+  width: 95%;
+  margin-left: 16px;
+}
+
+.name,
+.email {
+  height: 20px;
+}
+
+.barcode {
+  margin-left: 16px;
+  height: 30px;
+  margin-top: -8px;
+}
+
+.barcode img {
+  width: 100%;
+  height: 100%;
+  margin-left: -12px;
+}
+.rightCardBody {
+  width: 33%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardPicture {
+  width: 70px;
+  height: 90px;
+  object-fit: contain;
+}
+.cardPicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.studentCards:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}

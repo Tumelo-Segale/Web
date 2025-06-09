@@ -1,0 +1,275 @@
+/*style sheet specific to only home layout*/
+
+/*div for banner area*/
+.banner {
+  width: 90%;
+  height: 60vh;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 40px;
+  padding: 12px;
+}
+
+/*div for carousel on home*/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*div inside the carousel div to mimic slides*/
+.carouselSlide {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+
+  object-fit: contain;
+  border-radius: 40px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+.carouselSlide img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 4/3;
+}
+
+/*active effect on the slides div. make visible*/
+.carouselSlide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/*div for texts on each slide*/
+.carouselText {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  border-radius: 8px;
+}
+/*end of banner area*/
+
+/*div for content area under banner*/
+.content {
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/*left side of content area*/
+.leftContent {
+  background-color: #ebec8a;
+  width: 70%;
+  padding: 12px;
+  font-size: 24px;
+}
+
+/*right side of content area*/
+.rightContent {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.latestNews {
+  font-size: 20px;
+  background-color: #ffb800;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*div for the right content items for external news*/
+.rightContentItems {
+  background-color: #ffb800;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/*div for image area external*/
+.extImageArea {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  overflow: hidden;
+}
+
+/*format the anchor to retain shape of image*/
+.extImageArea a {
+  display: flex;
+}
+
+/*format image in image area*/
+.newsImage {
+  width: 100%;
+}
+
+/*div for external texts area*/
+.extTextArea {
+  width: 80%;
+  height: 30%;
+  display: flex;
+}
+
+/*make the right external news area disappear on window shrink*/
+/*when media screen is at max wid of 1000px*/
+@media screen and (max-width: 1000px) {
+  /*make the right content area disappear*/
+  .rightContent {
+    display: none;
+  }
+
+  /*adjust the left content area to expand the width*/
+  .leftContent {
+    width: 100%;
+  }
+}
+
+/*for the donate text after footer*/
+.donateBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  background-color: black;
+  color: #ffb800;
+  padding: 12px 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/*hover effect on the text donate*/
+.donateBtn:hover {
+  background-color: #ffb800;
+  color: black;
+}
+
+/*div to display on click of donate*/
+.donationModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*cover whole screen*/
+  width: 100vw;
+  height: 100vh;
+  /*to add dark background to window area with transaparency*/
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  /*overlap on navigation too*/
+  z-index: 1001;
+}
+
+/*div housing teh donation contents*/
+.donationModalContent {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*left side of the donation div for the form*/
+.donationForm {
+  min-width: 300px;
+  padding: 16px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 2; /*occupy twics as much as other div*/
+}
+
+/*adjust the food and trees logo on the form*/
+.donationForm img {
+  width: 60px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*input controls on the donation form*/
+.donationForm input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+/*submit button for the form*/
+.donationForm button {
+  background-color: black;
+  color: #ffb800;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*hover effect on button*/
+.donationForm button:hover {
+  background-color: #4d4a30;
+}
+
+/*the right side of the donation div for bank info*/
+.bankInfo {
+  flex: 1; /*half the size of the form area*/
+  min-width: 300px;
+  padding: 16px;
+  background-color: #f7f7f7;
+  border-left: 3px solid #ffb800;
+  text-align: center;
+}
+
+/*the header area of the bank info side*/
+.bankInfo h2 {
+  margin-bottom: 48px;
+}
+
+/*move all donation styles to another sheet if it doesnt repeat on our pages*/

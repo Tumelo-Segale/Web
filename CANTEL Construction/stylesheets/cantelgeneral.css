@@ -1,0 +1,260 @@
+/*General Layout for navigation and footers only*/
+/*Color Palette to use Yellow, Black and White*/
+
+/*Begin navigation*/
+/*outer div of the whole nav bar*/
+.navigationBar {
+  background-color: #ffb800;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/*the div for the home text logo area*/
+.cantel {
+  width: 220px;
+  height: 64px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 8px;
+}
+
+/*remove formatting on anchor for text logo*/
+.cantel a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+/*the logo main text*/
+.logoMain {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 12px;
+  color: black;
+  transition: color 0.4s;
+}
+
+/*hover effect for the logo main text*/
+.logoMain:hover {
+  color: white;
+}
+
+/*logo slogan text*/
+.slogan {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+  letter-spacing: 0.8px;
+  transition: color 0.4s;
+}
+
+/*hover effect for slogan*/
+.slogan:hover {
+  color: white;
+}
+
+/*container for hamburger menu on shrinking page*/
+.hamburger {
+  display: none;
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+  padding: 16px;
+}
+
+/*div wrapping in all right nav items to manipulate on shrinkinG*/
+.navMenu {
+  display: flex;
+}
+
+/*MEDIA SCREEN to adjust contents on screen size change*/
+/*at max width of 750 hide the div wrapping right nav*/
+@media screen and (max-width: 750px) {
+  /*while condition above apply the following styling*/
+  /*the nav menu wrapping the whole righ nav*/
+  .navMenu {
+    display: none;
+    width: 100%;
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  /*when mouse click active on div wrapping right nav*/
+  .navMenu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffb800;
+    position: absolute;
+    top: 64px; /*appear below the navigation bar*/
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 0;
+    max-height: 500px;
+  }
+
+  /*right nav */
+  .rightNav {
+    flex-direction: row; /*direction of the right nav items*/
+    align-items: center;
+    gap: 12px;
+    border-top: 2px solid white;
+  }
+
+  /*div for nav items*/
+  .navItems {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0;
+    border-bottom: 1px solid black;
+  }
+
+  /*display the hamburger*/
+  .hamburger {
+    display: block;
+  }
+}
+
+/*under full browser window cont*/
+/*the right navigation items section*/
+.rightNav {
+  width: 600px;
+  height: 64px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+/*conatiners for each nav items*/
+.navItems {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*remove format on anchor*/
+.navItems a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+/*hover and active efffect on nav items*/
+.navItems a:hover,
+.navItems a:active {
+  color: white;
+  font-size: 32px;
+  transition: color 0.4s ease, font-size 0.4s ease;
+}
+
+/*the center nav item for the vertical bars*/
+#gallery {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+/*the about nav item for vertical bars*/
+#about {
+  border-right: 3px solid black;
+  padding-right: 12px;
+}
+
+/*end navigation*/
+
+/*begin body*/
+
+/*body general*/
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*section main formatting to start below fixed nav*/
+.main {
+  margin-top: 68px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*end of body */
+
+/*begin footer*/
+
+/*footer arae*/
+.footer {
+  background-color: #ffb800;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*social media div for connect with us*/
+.socialMedia {
+  display: flex;
+  padding: 12px;
+  height: 60px;
+  background-color: gold;
+  background-color: #ffb800;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+/*contact div*/
+.contact {
+  display: flex;
+  height: 60px;
+  padding: 12px;
+  background-color: blue;
+  background-color: #ffb800;
+  justify-content: center;
+  align-items: center;
+}
+
+/*adjust the icon imgs on footer divs*/
+.socialMedia img {
+  width: 38px;
+  margin-right: 24px;
+}
+
+.contact img {
+  width: 32px;
+  margin-right: 24px;
+}
+
+/*hover animated effect for the icons*/
+.socialMedia img:hover {
+  width: 48px;
+  transition: width 0.4s ease;
+}
+
+.contact img:hover {
+  width: 40px;
+  transition: width 0.4s ease;
+}
+
+/*end of footer*/

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--charset: for character encoding-->
+    <meta charset="UTF-8">
+
+    <!--viewport for page maintainace on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--describe ur webpage for Search Engine Optimization-->
+    <meta name="description" content="Hire Cantel Construction for services and equipment">
+
+    <!--keywords to identify ur content for SEO (not necessary now)-->
+    <!--it was abused for SEO rankings as web dev would stuff it with keywords just to direct traffic-->
+    <!--web crawlers now ignore this meta-->
+    <meta name="keywords" content="Cantel, Cantel contruction">
+
+    <!--the title of the page -->
+    <title>CANTEL Construction</title>
+
+    <!--title icon for web page-->
+    <link rel="icon" href="../images/logo.png">
+
+    <!--link to general style sheet for navigation and footer-->
+    <link rel="stylesheet" href="../stylesheets/cantelgeneral.css">
+
+    <!--link to home page stylesheet-->
+    <link rel="stylesheet" href="../stylesheets/cantelHomeLayout.css">
+
+    <!--link to external icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--EXTERNAL GOOGLE FONTS-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!--embedded style sheet-->
+    <style>
+        /*format paragraphs in leftcontenet*/
+        .leftContent p {
+            text-align: justify;
+            padding-left: 12px;
+            padding-right: 12px;
+
+        }
+
+        /*format lists*/
+        li {
+            margin-bottom: 8px;
+        }
+
+        /*format text area paragraph*/
+        .extTextArea p {
+            font-size: 20px;
+        }
+
+        /*format paragraph for copyright*/
+        #copyright p {
+            font-size: 12px;
+        }
+    </style>
+
+    <!--Color palette: Yellow, Black and white-->
+
+</head>
+
+
+<body>
+    <!--begin Navigation bar-->
+    <nav class="navigationBar">
+
+        <!-- for home text logo-->
+        <div class="cantel">
+
+            <!-- anchor tag to refresh or go to home page-->
+            <a href="./cantel.html" class="homeText">
+
+                <!-- use div to dived the logo text and slogan-->
+                <div class="logoMain" style=" font-family: 'Montserrat';">CANTEL</div>
+                <div class="slogan" style="font-family: 'Montserrat';">Build Safe With Us</div>
+            </a>
+        </div>
+
+        <!--hamburger menu for shrinking webpage ||  onclick attribute to call the tuggle function-->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!--hambuger menu unicode-->
+        </div>
+
+        <!--wrap nav items in another div to manipulate on windw shrink-->
+        <div class="navMenu" id="navMenu">
+
+            <!--navigation items-->
+            <div class="rightNav">
+
+                <!--services-->
+                <div class="navItems">
+                    <a href="../webpages/cantelservices.html">Services</a>
+                </div>
+
+                <!--gallery-->
+                <div class="navItems" id="gallery">
+                    <a href="../webpages/cantelgallery.html">Gallery</a>
+                </div>
+
+                <!--about us-->
+                <div class="navItems" id="about">
+                    <a href="../webpages/cantelabout.html">About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!--   <div class="donate"></div>       -->
+
+    </nav>
+    <!--end of navigation bar-->
+
+    <!--begin section area for main content of home-->
+    <section class="main">
+
+        <!--banner area-->
+        <div class="banner">
+
+            <!--the div containing carousel media-->
+            <div class="carousel">
+
+                <div class="carouselSlide active">
+                    <img src="../images/ad 1pexels-mikael-blomkvist-8961146.jpg" class="carouselImage active"
+                        alt="Slide 1">
+                    <div class="carouselText">
+                        <p>Engineering Progress, Building your future</p>
+                    </div>
+                </div>
+                <div class="carouselSlide">
+                    <img src="../images/ad 2 pexels-cristian-rojas-8853536.jpg" class="carouselImage" alt="Slide 2">
+                    <div class="carouselText">
+                        <p>Powering Tomorrow With Clean Energy</p>
+                    </div>
+                </div>
+                <div class="carouselSlide">
+                    <img src="../images/ad 3 construction-site-pic1.jpg" class="carouselImage" alt="Slide 3">
+                    <div class="carouselText">
+                        <p>
+                            At CANTEL, precision meets power
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!--content area below banner area-->
+        <div class="content">
+
+            <!--left content welcome message-->
+            <div class="leftContent">
+                <P>
+                    <strong> <span style="font-size: 48px; ">W</span>elcome</strong> to <strong>CANTEL</strong>
+                    construction where we build more than just structures - we build trust, safety and long lasting
+                    relationship with clients. Whether we are planning a residential project or a commercial project, we
+                    are here to bring your vision to life.
+                </P>
+
+                <p>With a solid foundation rooted in quality workmanship, timely delivery of services, and transparent
+                    communication, our team of skilled experts is committed to exceeding expectations. We are proud to
+                    be a company you can count on from concept to completion of
+                    your project.
+                </p>
+
+                <p>As part of our commitment to sustainable development, we actively incorporate eco-friendly design
+                    principles, promote green building techniques, and support local tree-planting initiatives to help
+                    preserve the environment for future generations. CANTEL Construction proudly partners with Food &
+                    Trees for Africa to support green conservative initiatives. You can as well by choosing to donate.
+                </p>
+                <!--Donate-->
+
+
+
+                <!--why choose us-->
+                <p>
+                    <strong>
+                        <span style="font-size: 48px;">W</span>hy Choose Us?
+                    </strong>
+                    <br>
+                <ul>
+                    <li>
+                        <strong>Experienced Team:</strong> Our workers bring years of experience to every project.
+                    </li>
+
+                    <li>
+                        <strong>Safety First:</strong> We adopt strict safety standards, ensuring safety for all
+                    </li>
+
+                    <li>
+                        <strong>Timely Delivery:</strong> We value and maintain your time and quality.
+                    </li>
+
+                    <li>
+                        <strong>Client-Centered Approach:</strong> We listen to you and deliver with integrity.
+                    </li>
+
+                    <li>
+                        <strong>Innovative Solutions:</strong> We embrace innovation and sustainability to drive better
+                        results.
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <!--right content area-->
+            <div class="rightContent">
+                <!--top side-->
+                <div class="latestNews" style="border-radius: 10px;">
+                    <i><b style="font-family: 'Montserrat'; ">LATEST NEWS</b></i>
+                </div>
+                <div class="rightContentItems">
+
+                    <div class="extImageArea">
+                        <a href="https://constructionnews.co.za/asi-expands-into-autonomous-construction-with-softbank/"
+                            target="_blank">
+                            <img class="newsImage" src="../images/Automation.jpeg" alt="">
+                        </a>
+
+
+                    </div>
+                    <div class="extTextArea">
+
+                        <p>ASI Expands into Autonomous Construction with SoftBank
+                            <a href="https://constructionnews.co.za/asi-expands-into-autonomous-construction-with-softbank/"
+                                target="_blank"><br>
+                                Read More
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--bootom side-->
+                <div class="rightContentItems">
+                    <div class="extImageArea">
+                        <a href="https://www.bizcommunity.com/article/emfuleni-set-for-water-infrastructure-overhaul-after-r7bn-funding-commitment-928354a"
+                            target="_blank">
+                            <img class="newsImage" src="../images/news water.webp" alt="">
+                        </a>
+
+                    </div>
+                    <div class="extTextArea">
+                        <p>Emfuleni set for water infrastructure overhaul after R7bn funding commitment
+                            <a href="https://www.bizcommunity.com/article/emfuleni-set-for-water-infrastructure-overhaul-after-r7bn-funding-commitment-928354a"
+                                target="_blank"> <br>
+                                Read More
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of section for main contents-->
+
+    <!--footer begin-->
+    <footer class="footer">
+
+        <!--div for social media icons -->
+        <div class="socialMedia">
+            <span style="margin-right: 16px; font-size: 24px;">Connect With us:</span>
+            <a href="https://www.facebook.com"> <img src="../images/facebook2.svg" alt="Facebook icon"> </a>
+            <a href="https://x.com"> <img src="../images/x.svg" alt="X icon"> </a>
+            <a href="https://www.tiktok.com/"> <img src="../images/tiktok.svg" alt="TikTok icon"> </a>
+            <a href="https://www.instagram.com/"> <img src="../images/instagram.svg" alt="Instagram icon"> </a>
+            <a href="https://www.youtube.com/"> <img src="../images/youtube.svg" alt="Youtube icon"> </a>
+        </div>
+
+        <!--div for contact icons-->
+        <div class="contact">
+            <span style="margin-right: 16px;font-size: 24px;">Contact us:</span>
+            <a href="https://maps.app.goo.gl/5HHGWqEhMggsfqfc7">
+                <img src="../images/location-dot-solid.svg" alt="Location icon">
+            </a>
+            <a href="mailto:chidicivok@gmail.com"> <img src="../images/gmail.svg" alt="Google Mail Icon"> </a>
+            <a href="tel:+27698933416"> <img src="../images/phone-solid.svg" alt="Call Phone Icon"> </a>
+        </div>
+
+        <!--copyright div-->
+        <div id="copyright" class="footerItems">
+            <p>&copy; 2025 Cantel Construction. All rights reserved. Website designed by Cantel Web Development Team.
+            </p>
+        </div>
+    </footer>
+    <!--end of footer-->
+
+    <!--the donate button at end -->
+    <a href="#donationModal" class="donateBtn">Donate</a>
+
+    <!--the div to display on donate click-->
+    <div class="donationModal" id="donationModal">
+
+        <!--inner div for better formating-->
+        <div class="donationModalContent">
+
+            <!--the left side of the div-->
+            <div class="donationForm">
+                <img src="../images/food and trees for africa.png" alt="">
+
+                <form action="#">
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" placeholder="John Doe">
+
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" placeholder="Enter amount" min="1">
+
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="123">
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+            <!--the right side of the form-->
+            <div class="bankInfo">
+                <h2>If its easier to make an EFT please do so using our bank details below:</h2>
+                <p>Bank: First National Bank (FNB)</p>
+                <p>Branch: Sandton City (254605)</p>
+                <p>Account No: 62866852455</p>
+                <p>Account Type: Business Platinum Account</p>
+                <p>Swift code: FIRNZAJJ</p>
+                <br>
+                <p>Use name as reference.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--call the javascript files-->
+    <script src="./javascript/carousel.js"></script>
+    <script src="./javascript/donate.js"></script>
+    <script src="./javascript/hamburger.js"></script>
+
+</body>
+
+</html>
+<!--886356-->
