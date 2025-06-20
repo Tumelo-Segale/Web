@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles.css">
+  <title>SoftStitch</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>SoftStitch</h1>
+    <p>Handstitched clothes made with love.</p>
+  </header>
+  <!--Products-->
+  <section class="products">
+
+    <!--Product 1-->
+    <div class="card">
+      <img src="https://i.etsystatic.com/27755409/r/il/29a735/3213494161/il_794xN.3213494161_1nhd.jpg" alt="Tote-Bag" /> <!--Product image-->
+      <h2>Tote Bag</h2>
+      <p>R120</p>
+      <label for="size1">Size:</label> <!--Product size selection-->
+      <select id="size1">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty1" />
+      <button onclick="addToCart('Tote Bag', 120, qty1.value, size1.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+     <!--Product 2-->
+     <div class="card">
+      <img
+        src="https://di2ponv0v5otw.cloudfront.net/posts/2023/11/15/6554ae9458083deb9e256a31/m_6554aed54bc655dfc794a6cb.jpg" alt="Cardigan" /> <!--Product image-->
+      <h2>Cardigan</h2>
+      <p>R350</p>
+      <label for="size2">Size:</label> <!--Product size selection-->
+      <select id="size2">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty2" />
+      <button onclick="addToCart('Cardigan', 350, qty2.value, size2.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+    <!--Product 3-->
+    <div class="card">
+      <img src="https://i.etsystatic.com/23472111/r/il/f46a4f/3828023365/il_500x500.3828023365_8ckq.jpg" alt="Sweater" /> <!--Product image-->
+      <h2>Sweater</h2>
+      <p>R300</p>
+      <label for="size3">Size:</label> <!--Product size selection-->
+      <select id="size3">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty3" />
+      <button onclick="addToCart('Sweater', 300, qty3.value, size3.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+    <!--Product 4-->
+    <div class="card">
+      <img src="https://i.etsystatic.com/38168616/r/il/0fec89/4751258867/il_300x300.4751258867_8dp6.jpg" alt="Bucket-Hat" /> <!--Product image-->
+      <h2>Bucket Hat</h2>
+      <p>R100</p>
+      <label for="size4">Size:</label> <!--Product size selection-->
+      <select id="size4">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty4" />
+      <button onclick="addToCart('Bucket Hat', 100, qty4.value, size4.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+   <!--Product 5-->
+   <div class="card">
+    <img src="https://knotnook.co/cdn/shop/files/DALL_E2024-01-1514.24.45-Createanimageofasimplepinkcrochetedbeanie.Thehatshouldbeasolidpastelpinkcolorwithasmoothtextureandaclassiccrochetlook_featu.png?v=1730216412" alt="Beanie" /> <!--Product image-->
+    <h2>Beanie</h2>
+    <p>R100</p>
+    <label for="size5">Size:</label> <!--Product size selection-->
+    <select id="size5">
+      <option value="Small">Small</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Large">Large</option>
+    </select>
+    <label for="Quantity1">Qty:</label> <!--Product quantity-->
+    <input type="number" min="0" value="0" id="qty5" />
+    <button onclick="addToCart('Beanie', 100, qty5.value, size5.value)">Add to Cart</button> <!--Add to cart-->
+  </div>
+
+    <!--Product 6-->
+    <div class="card">
+      <img src="https://i.ebayimg.com/images/g/pzoAAOSwRxFm5Tbf/s-l960.jpg" alt="Ruffle-Hat" /> <!--Product image-->
+      <h2>Ruffle Hat</h2>
+      <p>R100</p>
+      <label for="size6">Size:</label> <!--Product size selection-->
+      <select id="size6">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty6" />
+      <button onclick="addToCart('Ruffle Hat', 100, qty6.value, size6.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+    <!--Product 7-->
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/1c/bf/f9/1cbff96ccb8508860d01486ce74164eb.jpg" alt="Crochet-Shirt" /> <!--Product image-->
+      <h2>Crochet Shirt</h2>
+      <p>R250</p>
+      <label for="size7">Size:</label> <!--Product size selection-->
+      <select id="size7">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty7" />
+      <button onclick="addToCart('Crochet Shirt', 250, qty7.value, size7.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+    <!--Product 8-->
+    <div class="card">
+      <img src="https://i.etsystatic.com/10900715/r/il/8d7d0c/841113924/il_1140xN.841113924_gpi6.jpg" alt="Swimwear" /> <!--Product image-->
+      <h2>Swimwear</h2>
+      <p>R200</p>
+      <label for="size8">Size:</label> <!--Product size selection-->
+      <select id="size8">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty8" />
+      <button onclick="addToCart('Swimwear', 200, qty8.value, size8.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+    <!--Product 9-->
+    <div class="card">
+      <img src="https://millionmama.co.za/wp-content/uploads/2023/07/8A528842-9FCC-415D-882F-BFC2F7D34C84.jpeg" alt="Skirt & Top" /> <!--Product image-->
+      <h2>Skirt & Top</h2>
+      <p>R400</p>
+      <label for="size9">Size:</label> <!--Product size selection-->
+      <select id="size9">
+        <option value="Small">Small</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Large">Large</option>
+      </select>
+      <label for="Quantity1">Qty:</label> <!--Product quantity-->
+      <input type="number" min="0" value="0" id="qty9" />
+      <button onclick="addToCart('Skirt & Top', 400, qty9.value, size9.value)">Add to Cart</button> <!--Add to cart-->
+    </div>
+
+  </section>
+
+  <!-- Floating Cart with integrated delivery form -->
+  <div id="cart">
+    <h2 onclick="toggleCartDetails()">🛒 Cart (<span id="cart-count">0</span> items)</h2>
+    <div id="cart-details">
+      <div id="cart-items"></div>
+      <p><strong>Total:</strong> R<span id="cart-total">0</span></p>
+      <button class="pay-btn" onclick="showDeliveryForm()">Pay Now</button>
+
+      <!-- Delivery Form (now inside cart) -->
+      <form id="deliveryForm">
+        <h3>Delivery Information</h3>
+        <input type="text" id="fullname" placeholder="Full Name" required />
+        <input type="email" id="useremail" placeholder="Your Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="text" id="address" placeholder="Delivery Address" required /><br />
+
+        <div class="paymentDetails">
+          <h3>Payment Details</h3>
+          <p>
+            <strong>Bank:</strong> ABSA <br>
+            <strong>Account Number:</strong> 1234567890 <br>
+            <strong>Reference:</strong> Full Name
+          </p>
+        </div>
+
+        <label>Upload Proof of Payment:</label>
+        <input type="file" id="paymentProof" required />
+        <button type="button" onclick="submitOrder()">Submit Order</button>
+        <button type="button" onclick="hideDeliveryForm()" style="background: #ccc; color: #333;">Back to Cart</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom Order Form -->
+  <form id="orderForm">
+    <h2>Custom Order Form</h2>
+    <p>Don't see what you want? Don't worry we can make it. <br>Tell us what you want and we'll custom make it, <b>just for you.</b></p>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message or Custom Order..." rows="4" required></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 SoftStitch. Handmade in South Africa.</p>
+  </footer>
+
+  <script src="Script.js"></script>
+
+</body>
+</html>
+<!--886356-->

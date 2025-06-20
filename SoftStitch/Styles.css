@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fdfdfd;
+    color: #333;
+  }
+
+  header {
+    background: #ffc0cb;
+    padding: 16px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .card input[type="number"] {
+    width: 60px;
+    margin: 0.5rem;
+  }
+
+  .card select {
+    margin: 0.5rem;
+    padding: 0.25rem;
+  }
+
+  .card button {
+    padding: 0.5rem 1rem;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Cart Styling */
+  #cart {
+    display: none;
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffc0cb;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  #cart h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #cart-details {
+    display: none;
+  }
+
+  #cart-items {
+    margin-bottom: 1rem;
+  }
+
+  /* Delivery Form Styling (inside cart) */
+  #deliveryForm {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+  }
+
+  #deliveryForm input {
+    width: 90%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #deliveryForm button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #deliveryForm button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .cart-item span {
+    flex: 1;
+  }
+
+  .remove-btn {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pay-btn {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  /* Custom Order Form Styling */
+  #orderForm {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f7f7f7;
+    border-radius: 8px;
+  }
+
+  #orderForm input {
+    width: 90%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #orderForm textarea {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding-left: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #orderForm button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #orderForm button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+  }
+
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  @media (max-width: 768px) {
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .pay-btn,
+    .remove-btn,
+    #deliveryForm button,
+    #orderForm button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  }
+  /*886356*/
